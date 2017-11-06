@@ -4,4 +4,4 @@ Create a Dark Sky account and put your own Secret API Key in the Config.js file.
 
 Execute by running:
 
-node app.js -a <address name> [-f for optional fahrenheit data]
+node app.js -a "ADDRESS_NAME" [-f (optional)]
