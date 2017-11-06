@@ -1,7 +1,8 @@
 const request = require("request");
+const config = require("../config.js");
 
 var getWeather = (latitude, longitude, units, callback) => {
-    var apiUrl = `https://api.darksky.net/forecast/ec4ea1f23aafad908948c8345d1db1b7/${latitude},${longitude}${(units) ? "?units=si" : ""}`;
+    var apiUrl = `https://api.darksky.net/forecast/${config.dsAPISecret}/${latitude},${longitude}${(units) ? "?units=si" : ""}`;
 
     request({
         url: apiUrl,
